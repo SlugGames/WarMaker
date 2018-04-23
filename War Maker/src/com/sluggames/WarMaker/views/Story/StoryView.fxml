@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<fx:root fitToHeight="true" fitToWidth="true" type="ScrollPane" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <VBox alignment="CENTER" spacing="15.0" style="-fx-background-color: darkolivegreen; -fx-border-color: black; -fx-border-width: 15;">
+         <children>
+            <Text text="Story">
+               <font>
+                  <Font name="Constantia Bold" size="64.0" />
+               </font>
+               <fill>
+                  <LinearGradient cycleMethod="REFLECT" endX="0.7285714285714286" endY="0.5428571428571429" startX="0.7" startY="0.5095238095238095">
+                     <stops>
+                        <Stop color="DARKSLATEGRAY" />
+                        <Stop color="OLIVEDRAB" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <effect>
+                  <DropShadow blurType="TWO_PASS_BOX" color="#111111" height="180.0" radius="89.5" spread="0.8" width="180.0">
+                     <input>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </input>
+                  </DropShadow>
+               </effect>
+            </Text>
+            <ScrollPane fitToWidth="true" style="-fx-background-color: darkolivegreen; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 10;" VBox.vgrow="ALWAYS">
+               <content>
+                  <TextFlow textAlignment="CENTER">
+                     <children>
+                        <Text fx:id="storyText">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </padding>
+                  </TextFlow>
+               </content>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </ScrollPane>
+            <Button fx:id="mainMenuButton" mnemonicParsing="false" style="-fx-background-color: orange; -fx-background-radius: 10; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 10;" text="Main Menu" textFill="DARKSLATEGRAY">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font name="Constantia Bold" size="14.0" />
+               </font>
+               <effect>
+                  <Reflection fraction="0.25" topOpacity="0.25" />
+               </effect>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </VBox>
+   </content>
+</fx:root>

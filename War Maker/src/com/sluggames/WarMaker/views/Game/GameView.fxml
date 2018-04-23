@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root fitToHeight="true" fitToWidth="true" type="ScrollPane" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <StackPane fx:id="playAreaStackPane">
+         <children>
+            <GridPane style="-fx-background-color: darkolivegreen;">
+              <columnConstraints>
+                  <ColumnConstraints percentWidth="10.0" />
+                <ColumnConstraints halignment="CENTER" percentWidth="4.0" />
+                <ColumnConstraints halignment="CENTER" percentWidth="4.0" />
+                  <ColumnConstraints halignment="CENTER" percentWidth="4.0" />
+                  <ColumnConstraints halignment="CENTER" percentWidth="4.0" />
+                  <ColumnConstraints halignment="CENTER" percentWidth="4.0" />
+                  <ColumnConstraints halignment="CENTER" percentWidth="4.0" />
+                  <ColumnConstraints halignment="CENTER" percentWidth="4.0" />
+                  <ColumnConstraints percentWidth="22.0" />
+                  <ColumnConstraints halignment="CENTER" percentWidth="4.0" />
+                  <ColumnConstraints halignment="CENTER" percentWidth="4.0" />
+                  <ColumnConstraints halignment="CENTER" percentWidth="4.0" />
+                  <ColumnConstraints halignment="CENTER" percentWidth="4.0" />
+                  <ColumnConstraints halignment="CENTER" percentWidth="4.0" />
+                  <ColumnConstraints halignment="CENTER" percentWidth="4.0" />
+                  <ColumnConstraints halignment="CENTER" percentWidth="4.0" />
+                  <ColumnConstraints percentWidth="10.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints percentHeight="36.0" />
+                <RowConstraints percentHeight="4.0" valignment="CENTER" />
+                <RowConstraints percentHeight="4.0" valignment="CENTER" />
+                  <RowConstraints percentHeight="4.0" valignment="CENTER" />
+                  <RowConstraints percentHeight="4.0" valignment="CENTER" />
+                  <RowConstraints percentHeight="4.0" valignment="CENTER" />
+                  <RowConstraints percentHeight="4.0" valignment="CENTER" />
+                <RowConstraints percentHeight="4.0" valignment="CENTER" />
+                  <RowConstraints percentHeight="36.0" />
+              </rowConstraints>
+               <children>
+                  <StackPane fx:id="redStackPane" style="-fx-background-color: red; -fx-background-radius: 10; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 10;" GridPane.columnIndex="2" GridPane.columnSpan="5" GridPane.rowIndex="2" GridPane.rowSpan="5">
+                     <children>
+                        <Text fx:id="redHealthText" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font name="Constantia Bold" size="36.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect>
+                  </StackPane>
+                  <Circle fx:id="redCircle1" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="redCircle2" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="redCircle3" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="redCircle4" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="redCircle5" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="redCircle6" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="7" GridPane.rowIndex="2">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="redCircle7" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="7" GridPane.rowIndex="3">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="redCircle8" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="7" GridPane.rowIndex="4">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="redCircle9" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="7" GridPane.rowIndex="5">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="redCircle10" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="7" GridPane.rowIndex="6">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="redCircle11" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="6" GridPane.rowIndex="7">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="redCircle12" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="5" GridPane.rowIndex="7">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="redCircle13" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="4" GridPane.rowIndex="7">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="redCircle14" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="redCircle15" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="redCircle16" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="redCircle17" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="redCircle18" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="redCircle19" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="redCircle20" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <StackPane fx:id="blueStackPane" style="-fx-background-color: blue; -fx-background-radius: 10; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 10;" GridPane.columnIndex="10" GridPane.columnSpan="5" GridPane.rowIndex="2" GridPane.rowSpan="5">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect>
+                     <children>
+                        <Text fx:id="blueHealthText">
+                           <font>
+                              <Font name="Constantia Bold" size="36.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </StackPane>
+                  <Circle fx:id="blueCircle1" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="14" GridPane.rowIndex="1">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="blueCircle2" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="13" GridPane.rowIndex="1">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="blueCircle3" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="12" GridPane.rowIndex="1">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="blueCircle4" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="11" GridPane.rowIndex="1">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="blueCircle5" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="10" GridPane.rowIndex="1">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="blueCircle6" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="9" GridPane.rowIndex="2">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="blueCircle7" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="9" GridPane.rowIndex="3">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="blueCircle8" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="9" GridPane.rowIndex="4">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="blueCircle9" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="9" GridPane.rowIndex="5">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="blueCircle10" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="9" GridPane.rowIndex="6">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="blueCircle11" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="10" GridPane.rowIndex="7">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="blueCircle12" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="11" GridPane.rowIndex="7">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="blueCircle13" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="12" GridPane.rowIndex="7">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="blueCircle14" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="13" GridPane.rowIndex="7">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="blueCircle15" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="14" GridPane.rowIndex="7">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="blueCircle16" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="15" GridPane.rowIndex="6">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="blueCircle17" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="15" GridPane.rowIndex="5">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="blueCircle18" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="15" GridPane.rowIndex="4">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="blueCircle19" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="15" GridPane.rowIndex="3">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+                  <Circle fx:id="blueCircle20" radius="10.0" stroke="BLACK" strokeWidth="2.0" GridPane.columnIndex="15" GridPane.rowIndex="2">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect></Circle>
+               </children>
+            </GridPane>
+            <Group fx:id="airGroup" />
+            <GridPane>
+               <columnConstraints>
+                  <ColumnConstraints percentWidth="10.0" />
+                  <ColumnConstraints halignment="CENTER" percentWidth="5.0" />
+                  <ColumnConstraints percentWidth="20.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" percentWidth="5.0" />
+                  <ColumnConstraints halignment="CENTER" percentWidth="20.0" />
+                  <ColumnConstraints halignment="CENTER" percentWidth="5.0" />
+                  <ColumnConstraints percentWidth="20.0" />
+                  <ColumnConstraints halignment="CENTER" percentWidth="5.0" />
+                  <ColumnConstraints percentWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints percentHeight="10.0" />
+                  <RowConstraints percentHeight="15.0" valignment="CENTER" />
+                  <RowConstraints percentHeight="55.0" />
+                  <RowConstraints percentHeight="10.0" />
+                  <RowConstraints percentHeight="10.0" />
+               </rowConstraints>
+               <children>
+                  <Text fx:id="scoreText" fill="BEIGE" stroke="LIME" strokeWidth="2.0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Constantia Bold" size="36.0" />
+                     </font>
+                     <effect>
+                        <DropShadow blurType="TWO_PASS_BOX" color="#111111" height="180.0" radius="89.5" spread="0.8" width="180.0">
+                           <input>
+                              <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                                 <bumpInput>
+                                    <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                                 </bumpInput>
+                              </Lighting>
+                           </input>
+                        </DropShadow>
+                     </effect>
+                  </Text>
+                  <Text fill="GREEN" stroke="YELLOWGREEN" strokeWidth="2.0" text="\$" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <effect>
+                        <DropShadow blurType="TWO_PASS_BOX" color="#111111" height="180.0" radius="89.5" spread="0.9" width="180.0">
+                           <input>
+                              <Glow level="0.5" />
+                           </input>
+                        </DropShadow>
+                     </effect>
+                  </Text>
+                  <Text fill="GREEN" stroke="YELLOWGREEN" strokeWidth="2.0" text="\$$$" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <effect>
+                        <DropShadow blurType="TWO_PASS_BOX" color="#111111" height="180.0" radius="89.5" spread="0.8" width="180.0">
+                           <input>
+                              <Glow level="0.5" />
+                           </input>
+                        </DropShadow>
+                     </effect>
+                  </Text>
+                  <Slider fx:id="redPriceSlider" max="4.0" min="1.0" style="-fx-background-color: red; -fx-background-radius: 10; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 10; -fx-control-inner-background: green;" value="2.5" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <effect>
+                        <Reflection fraction="0.5" topOpacity="0.25">
+                           <input>
+                              <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                                 <bumpInput>
+                                    <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                                 </bumpInput>
+                              </Lighting>
+                           </input>
+                        </Reflection>
+                     </effect>
+                  </Slider>
+                  <Text fill="GREEN" stroke="YELLOWGREEN" strokeWidth="2.0" text="\$" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <effect>
+                        <DropShadow blurType="TWO_PASS_BOX" color="#111111" height="180.0" radius="89.5" spread="0.9" width="180.0">
+                           <input>
+                              <Glow level="0.5" />
+                           </input>
+                        </DropShadow>
+                     </effect>
+                  </Text>
+                  <Text fill="GREEN" stroke="YELLOWGREEN" strokeWidth="2.0" text="\$$$" GridPane.columnIndex="7" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <effect>
+                        <DropShadow blurType="TWO_PASS_BOX" color="#111111" height="180.0" radius="89.5" spread="0.8" width="180.0">
+                           <input>
+                              <Glow level="0.5" />
+                           </input>
+                        </DropShadow>
+                     </effect>
+                  </Text>
+                  <Slider fx:id="bluePriceSlider" max="4.0" min="1.0" style="-fx-background-color: blue; -fx-background-radius: 10; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 10; -fx-control-inner-background: green;" value="2.5" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <effect>
+                        <Reflection fraction="0.5" topOpacity="0.25">
+                           <input>
+                              <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                                 <bumpInput>
+                                    <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                                 </bumpInput>
+                              </Lighting>
+                           </input>
+                        </Reflection>
+                     </effect>
+                  </Slider>
+               </children>
+            </GridPane>
+            <VBox fx:id="pauseMenuVBox" alignment="CENTER" spacing="15.0" style="-fx-background-color: #111111bb; -fx-border-color: black; -fx-border-width: 15;">
+               <children>
+                  <Text fx:id="pauseMenuText" stroke="BLACK" strokeWidth="2.0">
+                     <font>
+                        <Font name="Constantia Bold" size="64.0" />
+                     </font>
+                     <fill>
+                        <LinearGradient cycleMethod="REFLECT" endX="0.7714285714285715" endY="0.4809523809523809" startX="0.7285714285714286" startY="0.4714285714285715">
+                           <stops>
+                              <Stop color="DARKSLATEGRAY" />
+                              <Stop color="OLIVEDRAB" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                     <effect>
+                        <DropShadow blurType="TWO_PASS_BOX" color="#111111" height="180.0" radius="89.5" spread="0.8" width="180.0">
+                           <input>
+                              <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                                 <bumpInput>
+                                    <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                                 </bumpInput>
+                              </Lighting>
+                           </input>
+                        </DropShadow>
+                     </effect>
+                  </Text>
+                  <Button fx:id="resumeButton" mnemonicParsing="false" style="-fx-background-color: orange; -fx-background-radius: 10; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 10;" textFill="DARKSLATEGRAY">
+                     <font>
+                        <Font name="Constantia Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <Reflection fraction="0.25" topOpacity="0.25" />
+                     </effect>
+                  </Button>
+                  <Button fx:id="mainMenuButton" mnemonicParsing="false" style="-fx-background-color: orange; -fx-background-radius: 10; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 10;" text="Main Menu" textFill="DARKSLATEGRAY">
+                     <font>
+                        <Font name="Constantia Bold" size="14.0" />
+                     </font>
+                     <effect>
+                        <Reflection fraction="0.25" topOpacity="0.25" />
+                     </effect></Button>
+               </children>
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+            </VBox>
+         </children>
+      </StackPane>
+   </content>
+</fx:root>

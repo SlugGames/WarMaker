@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root fitToHeight="true" fitToWidth="true" style="-fx-background-color: black;" type="ScrollPane" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <VBox alignment="CENTER" spacing="15.0" style="-fx-background-color: darkolivegreen;">
+         <children>
+            <Text stroke="BLACK" strokeWidth="2.0" text="War Maker">
+               <font>
+                  <Font name="Constantia" size="64.0" />
+               </font>
+               <fill>
+                  <LinearGradient cycleMethod="REFLECT" endX="0.7238095238095238" endY="0.5238095238095238" startX="0.6809523809523809" startY="0.4571428571428572">
+                     <stops>
+                        <Stop color="DIMGRAY" />
+                        <Stop color="GREENYELLOW" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <effect>
+                  <DropShadow blurType="TWO_PASS_BOX" color="#111111" height="180.0" radius="89.5" spread="0.8" width="180.0">
+                     <input>
+                        <Lighting diffuseConstant="1.5" light="$null" specularConstant="1.5" specularExponent="30.0" surfaceScale="5.0">
+                           <bumpInput>
+                              <Shadow color="LEMONCHIFFON" height="20.0" radius="9.5" width="20.0" />
+                           </bumpInput>
+                        </Lighting>
+                     </input></DropShadow>
+               </effect>
+            </Text>
+            <Button fx:id="newGameButton" mnemonicParsing="false" style="-fx-background-color: orange; -fx-background-radius: 10; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 10;" text="New Game" textFill="DARKSLATEGRAY">
+               <font>
+                  <Font name="Constantia Bold" size="14.0" />
+               </font>
+               <effect>
+                  <Reflection fraction="0.25" topOpacity="0.25" />
+               </effect></Button>
+            <Button fx:id="storyButton" mnemonicParsing="false" style="-fx-background-color: orange; -fx-background-radius: 10; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 10;" text="Story" textFill="DARKSLATEGRAY">
+               <font>
+                  <Font name="Constantia Bold" size="14.0" />
+               </font>
+               <effect>
+                  <Reflection fraction="0.25" topOpacity="0.25" />
+               </effect></Button>
+            <Button fx:id="settingsButton" mnemonicParsing="false" style="-fx-background-color: orange; -fx-background-radius: 10; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 10;" text="Settings" textFill="DARKSLATEGRAY">
+               <font>
+                  <Font name="Constantia Bold" size="14.0" />
+               </font>
+               <effect>
+                  <Reflection fraction="0.25" topOpacity="0.25" />
+               </effect></Button>
+            <Button fx:id="creditsButton" mnemonicParsing="false" style="-fx-background-color: orange; -fx-background-radius: 10; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 10;" text="Credits" textFill="DARKSLATEGRAY">
+               <font>
+                  <Font name="Constantia Bold" size="14.0" />
+               </font>
+               <effect>
+                  <Reflection fraction="0.25" topOpacity="0.25" />
+               </effect></Button>
+            <Button fx:id="licenseButton" mnemonicParsing="false" style="-fx-background-color: orange; -fx-background-radius: 10; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 10;" text="License" textFill="DARKSLATEGRAY">
+               <font>
+                  <Font name="Constantia Bold" size="14.0" />
+               </font>
+               <effect>
+                  <Reflection fraction="0.25" topOpacity="0.25" />
+               </effect></Button>
+            <Button fx:id="quitButton" mnemonicParsing="false" style="-fx-background-color: orange; -fx-background-radius: 10; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 10;" text="Quit" textFill="DARKSLATEGRAY">
+               <font>
+                  <Font name="Constantia Bold" size="14.0" />
+               </font>
+               <effect>
+                  <Reflection fraction="0.25" topOpacity="0.25" />
+               </effect></Button>
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </VBox>
+   </content>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</fx:root>
